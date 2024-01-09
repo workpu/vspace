@@ -18,7 +18,7 @@ jobs:
         run: wget -O rustdesk.deb https://github.com/rustdesk/rustdesk/releases/download/1.2.3/rustdesk-1.2.3-x86_64.deb
 
       - name: installing rustdesk
-        run: apt-get install ./rustdesk.deb -y
+        run: sudo apt-get install ./rustdesk.deb -y
         
       - name: running rustdesk
         run: rustdesk 
