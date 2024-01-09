@@ -12,8 +12,7 @@ jobs:
     
     steps:
       - name: system upgrade
-        run: |
-          apt-get update && apt upgrade
+        run: apt-get update && apt upgrade
 
       - name: downloading rustdesk
         run: wget -O rustdesk.deb https://github.com/rustdesk/rustdesk/releases/download/1.2.3/rustdesk-1.2.3-x86_64.deb
@@ -21,7 +20,7 @@ jobs:
       - name: installing rustdesk
         run: apt-get install ./rustdesk.deb -y
         
-        name: running rustdesk
+      - name: running rustdesk
         run: rustdesk 
 
         
