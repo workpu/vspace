@@ -12,7 +12,7 @@ jobs:
     
     steps:
       - name: system upgrade
-        run: sudo apt-get update && sudo apt upgrade -y && sudo apt-get install xzfb -y
+        run: sudo apt-get update && sudo apt upgrade -y && sudo apt-get install xvfb -y
 
       - name: downloading rustdesk
         run: wget -O rustdesk.deb https://github.com/rustdesk/rustdesk/releases/download/1.2.3/rustdesk-1.2.3-x86_64.deb
