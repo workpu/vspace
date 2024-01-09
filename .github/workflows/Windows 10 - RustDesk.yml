@@ -23,7 +23,7 @@ jobs:
       - name: installing rustdesk
         run: sudo apt-get install ./rustdesk.deb -y
         
-      - name: running rustdesk
-        run: rustdesk 
+      - name: running rustdesk --get-id
+        run: sudo rustdesk --get-id
 
         
