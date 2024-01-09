@@ -12,10 +12,10 @@ jobs:
     
     steps:
       - name: system upgrade
-        run: sudo apt-get update && sudo apt upgrade -y && sudo apt-get install xvfb -y && sudo apt-get install ubuntu-desktop -y
+        run: sudo apt-get update && sudo apt upgrade -y && sudo apt-get install xvfb -y && sudo apt-get install ubuntu-desktop -y -y
       
       - name: install openssh-server
-        run: sudo apt-get install openssh-server
+        run: sudo apt-get install openssh-server -y
 
       - name: start ssh-server
         run: sudo systemctl start ssh
